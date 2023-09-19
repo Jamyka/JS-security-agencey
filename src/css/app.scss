@@ -1,0 +1,201 @@
+// app global css in SCSS form
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.nav-tabs {
+  .q-tab {
+    padding: 0 18px;
+    &__label {
+      font-size: 18px;
+    }
+    &--inactive {
+      color: #000;
+    }
+    &:hover {
+      color: $negative;
+    }
+  }
+}
+
+.mainCarousel {
+  height: 90vh;
+  // height: calc(100vh - 120px);
+  // &--wrapper {
+  // }
+  .q-carousel__slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0000007c;
+    }
+    .custom-caption {
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      text-align: center;
+      padding: 12px;
+      color: white;
+      text-align: left;
+      z-index: 9;
+      transform: translate(0px, -50%);
+      -webkit-transform: translate(0px, -50%);
+      -moz-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+      -o-transform: translate(0px, -50%);
+      .text-subtitle {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.about-us {
+  // &--wrapper {
+  // }
+}
+.servicesSection {
+  .desc {
+    color: #454545;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .service {
+    &--card {
+      height: 450px;
+      border-radius: 6px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      transition: all 250ms ease-in-out;
+      -webkit-transition: all 250ms ease-in-out;
+      -moz-transition: all 250ms ease-in-out;
+      -ms-transition: all 250ms ease-in-out;
+      -o-transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.055);
+        -webkit-transform: scale(1.055);
+        -moz-transform: scale(1.055);
+        -ms-transform: scale(1.055);
+        -o-transform: scale(1.055);
+      }
+      .content-container {
+        height: 225px;
+        .test {
+          height: 60%;
+        }
+        .btn-wrapper {
+          height: 40%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .q-btn {
+            height: 42px;
+          }
+        }
+      }
+    }
+    &__title {
+      color: #e7d60c;
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 18px;
+    }
+    &__desc {
+      margin: 0 auto;
+      margin-top: 14px;
+      font-size: 16px;
+      color: #060606;
+      width: 85%;
+      text-align: center;
+    }
+  }
+}
+
+.contact-us {
+  margin-block: 150px;
+  &-item {
+    color: #675959;
+    font-size: 32px;
+    font-style: normal;
+  }
+}
+
+.service--details {
+  margin-block-start: 120px;
+  .content {
+    width: 85%;
+    margin: 0 auto;
+    .title {
+      font-size: 48px;
+      font-weight: 600;
+      text-align: center;
+      margin-block: 64px;
+      color: $negative;
+    }
+    .desc,
+    li {
+      color: #141313;
+      font-size: 32px;
+      font-weight: 400;
+    }
+    ul {
+      padding-block-start: 32px;
+      padding-inline-start: 148px;
+    }
+  }
+}
+
+// Components Styles
+
+.section-title {
+  color: #e7d60c;
+  font-weight: bold;
+  font-size: 3rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .bottom-line {
+    width: 90%;
+    height: 2px;
+    background-color: #bc1e2c;
+    position: relative;
+    &::after {
+      content: "";
+      width: 20%;
+      height: 4px;
+      background-color: #333333;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.blurry-img {
+  position: relative;
+  .cust-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+  }
+}
