@@ -211,3 +211,9 @@ html {
     z-index: 9;
   }
 }
+
+@media (max-width: 426px) {
+  .mainCarousel {
+    height: 150vh;
+  }
+}

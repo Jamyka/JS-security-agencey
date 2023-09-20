@@ -23,7 +23,7 @@
           <div class="text-h2 text-weight-bold text-negative">
             {{ item.title }}
           </div>
-          <div class="text-subtitle">{{ item.subTitle }}</div>
+          <div class="text-subtitle q-mt-md">{{ item.subTitle }}</div>
         </div>
       </q-carousel-slide>
     </q-carousel>
