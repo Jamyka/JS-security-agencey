@@ -8,15 +8,24 @@
   >
     <div class="row flex justify-center q-mt-xl q-mb-lg">
       <section-title-component
-        class="col-md-6 col-sm-12"
+        class="col-md-3 col-sm-12"
         title="Our Services"
       />
     </div>
     <div class="row justify-center">
-      <div class="col-6 desc bg-amber">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum fuga
-        qui, quo in magnam non doloremque, dicta at voluptatibus soluta maxime,
-        rerum voluptatum. Dolorum facere dignissimos fugiat saepe commodi quae?
+      <div class="col-lg-8 col-md-8 col-sm-11 desc">
+        <div class="text-h4 text-weight-bold">
+          {{ serviceSection.desc }}
+        </div>
+        <ul>
+          <li
+            v-for="(item, i) in serviceSection.list"
+            :key="i"
+            class="text-h5 q-mr-xl text-weight-bold"
+          >
+            {{ item }}
+          </li>
+        </ul>
       </div>
     </div>
     <div class="row justify-evenly q-my-xl">
@@ -36,6 +45,7 @@
               <q-btn
                 color="negative"
                 label="Read More"
+                size="md"
                 @click="$router.push(`/service/${item.id}`)"
               />
             </div>
@@ -55,6 +65,12 @@ export default {
   components: { SectionTitleComponent, BlurryImgComponent },
   setup() {
     const { t } = useI18n({ useScope: "global" });
+    const serviceSection = computed(() => {
+      return {
+        desc: t(`ServiceSection.desc`),
+        list: t(`ServiceSection.list`).split(","),
+      };
+    });
     const sercviceItems = computed(() => [
       {
         id: 1,
@@ -76,6 +92,7 @@ export default {
       },
     ]);
     return {
+      serviceSection,
       sercviceItems,
     };
   },

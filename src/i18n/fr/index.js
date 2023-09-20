@@ -34,33 +34,23 @@ export default {
   AboutUs: [
     {
       id: 1,
-      icon: "/webcam-security.svg",
-      title: "Caméras De Surveillance",
-      subTitle:
-        "Avec des spécialistes de l'installation de vidéosurveillance pour les maisons, les entreprises, les usines et les hôtels.Protégez votre maison et vos biens en installant une caméra connectée.",
-    },
-    {
-      id: 2,
       icon: "/security-guard.svg",
       title: "Agents De Sécurité",
       subTitle:
         "Notre équipe d'agents de sécurité, de répartiteurs, de superviseurs et de patrouilleurs travaillent ensemble pour s'assurer que les attentes du client sont satisfaites.",
     },
     {
-      id: 3,
+      id: 2,
       icon: "/motivated-guards.svg",
       title: "Des Gardes Motivés",
       subTitle:
         "Nos agents de sécurité sont soigneusement sélectionnés et évalués sur une base continue. Nos superviseurs de terrain travaillent en permanence avec notre personnel de sécurité pour garantir que le même niveau de service élevé est constamment fourni.",
     },
-    {
-      id: 4,
-      icon: "/allday-security.svg",
-      title: "24/7 Services",
-      subTitle:
-        "En véhicule automobile ou à pied, Des patrouilles de sécurité 24 heures sur 24 vous protègent de plusieurs manières.",
-    },
   ],
+  ServiceSection: {
+    desc: "Nos agents de sécurité effectue des tâches spécifiques qui peuvent inclure:",
+    list: "Surveillance ou protéger des personnes - des biens ou des locaux,Surveillance TV en circuit fermé,Contrôle de foule,Contrôle du stationnement,Maintenir l'ordre,Effectuer des travaux de surveillance afin de prévenir les vols à l'étalage,Patrouille en véhicule ou à pied,S'assurer que les procédures de sécurité sont respectées,Sécurité du portier,Détecter et prévenir le vol - l'incendie et le vandalisme,Appliquer les réglementations des établissements,Décourager les mauvais comportements",
+  },
   ServicesList: [
     {
       id: 1,

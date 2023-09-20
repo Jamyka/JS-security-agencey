@@ -20,7 +20,9 @@
         :img-src="item.img"
       >
         <div class="absolute-center custom-caption">
-          <div class="text-h4">{{ item.title }}</div>
+          <div class="text-h2 text-weight-bold text-negative">
+            {{ item.title }}
+          </div>
           <div class="text-subtitle">{{ item.subTitle }}</div>
         </div>
       </q-carousel-slide>
@@ -40,13 +42,13 @@ export default {
         id: 1,
         title: t(`MainSlider[0].title`),
         subTitle: t(`MainSlider[0].subTitle`),
-        img: "/montreal.webp",
+        img: "/first_slide.jpg",
       },
       {
         id: 2,
         title: t(`MainSlider[1].title`),
         subTitle: t(`MainSlider[1].subTitle`),
-        img: "/guard-5.jpg",
+        img: "/screens.jpg",
       },
       {
         id: 3,

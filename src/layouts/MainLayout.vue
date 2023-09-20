@@ -2,15 +2,20 @@
   <q-layout view="lHh Lpr lFf">
     <q-header reveal class="header-bg">
       <q-toolbar>
-        <q-img
-          src="/logo.png"
-          fit="contain"
-          width="70px"
-          height="70px"
-          no-spinner
-          loading="eager"
-          class="q-my-md q-mx-sm"
-        />
+        <div class="logo-container flex flex-center">
+          <q-img
+            src="/logo.png"
+            fit="contain"
+            width="80px"
+            height="80px"
+            no-spinner
+            loading="eager"
+            class="q-my-md q-mx-sm"
+          />
+          <span class="logo-title" v-if="$q.screen.width > 1024"
+            >Agence de Sécurité</span
+          >
+        </div>
         <q-space />
         <div class="q-pr-xl q-mr-xl" v-if="$q.screen.width > 768">
           <q-tabs no-caps class="text-negative nav-tabs">
@@ -22,10 +27,11 @@
               :label="item.label"
             />
             <q-btn
-              :label="locale == 'fr' ? 'English' : 'France'"
+              :label="locale == 'fr' ? 'EN' : 'FR'"
               color="negative"
               rounded
               @click="switchLang"
+              class="q-mx-md"
             />
           </q-tabs>
         </div>
@@ -66,7 +72,7 @@
         />
         <div class="flex flex-center q-mt-md">
           <q-btn
-            :label="locale == 'fr' ? 'English' : 'France'"
+            :label="locale == 'fr' ? 'EN' : 'FR'"
             color="negative"
             rounded
             @click="switchLang"
@@ -175,10 +181,16 @@ export default defineComponent({
 <style lang="scss" scoped>
 .header-bg {
   // background-color: #ffffff3b;
-  background-color: #fff;
+  background-color: #333333;
   transition: all 250ms ease;
   // &:hover {
   //   background-color: #fff;
   // }
+}
+.logo-title {
+  font-weight: bold;
+  font-size: 32px;
+  color: #bc1e2c;
+  text-shadow: 3px 3px 6px rgba(233, 216, 0, 0.75);
 }
 </style>

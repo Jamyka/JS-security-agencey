@@ -3,17 +3,20 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 .nav-tabs {
   .q-tab {
     padding: 0 18px;
     &__label {
       font-size: 18px;
+      font-weight: 600;
     }
     &--inactive {
-      color: #000;
+      color: #fff;
     }
     &:hover {
-      color: $negative;
+      color: #e9d800;
+      background-color: $negative;
     }
   }
 }
@@ -40,36 +43,41 @@ html {
       background-color: #0000007c;
     }
     .custom-caption {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      width: 80%;
       position: absolute;
       top: 50%;
-      left: 25px;
+      left: 50%;
       text-align: center;
       padding: 12px;
       color: white;
-      text-align: left;
       z-index: 9;
-      transform: translate(0px, -50%);
-      -webkit-transform: translate(0px, -50%);
-      -moz-transform: translate(0px, -50%);
-      -ms-transform: translate(0px, -50%);
-      -o-transform: translate(0px, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
       .text-subtitle {
-        font-size: 18px;
+        font-size: 40px;
       }
     }
   }
 }
 
-.about-us {
-  // &--wrapper {
-  // }
-}
 .servicesSection {
   .desc {
     color: #454545;
     font-size: 16px;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
+    ul {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
   }
   .service {
     &--card {
@@ -105,15 +113,17 @@ html {
       }
     }
     &__title {
-      color: #e7d60c;
-      font-size: 22px;
+      color: $negative;
+      font-size: 28px;
       font-weight: 600;
       margin-top: 18px;
+      font-weight: bold;
     }
     &__desc {
       margin: 0 auto;
       margin-top: 14px;
-      font-size: 16px;
+      font-size: 18px;
+      font-weight: bold;
       color: #060606;
       width: 85%;
       text-align: center;
@@ -141,7 +151,7 @@ html {
       font-weight: 600;
       text-align: center;
       margin-block: 64px;
-      color: $negative;
+      color: #be1e2d;
     }
     .desc,
     li {
@@ -158,7 +168,7 @@ html {
 // Components Styles
 
 .section-title {
-  color: #e7d60c;
+  color: #be1e2d;
   font-weight: bold;
   font-size: 3rem;
   display: flex;
@@ -166,25 +176,26 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-shadow: 3px 3px 6px rgba(233, 216, 0, 0.75);
   .bottom-line {
     width: 90%;
     height: 2px;
-    background-color: #bc1e2c;
     position: relative;
-    &::after {
-      content: "";
-      width: 20%;
-      height: 4px;
-      background-color: #333333;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-    }
+    background-color: #333333;
+    // &::after {
+    //   content: "";
+    //   width: 20%;
+    //   height: 4px;
+    //   background-color: #333333;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   -webkit-transform: translate(-50%, -50%);
+    //   -moz-transform: translate(-50%, -50%);
+    //   -ms-transform: translate(-50%, -50%);
+    //   -o-transform: translate(-50%, -50%);
+    // }
   }
 }
 

@@ -6,7 +6,7 @@
     data-aos-easing="ease-in-out"
    -->
     <div
-      class="col-lg-3 col-md-6 col-sm-12 row no-wrap q-px-sm q-py-xl"
+      class="col-lg-6 col-md-6 col-sm-12 row no-wrap q-px-sm q-py-xl"
       v-for="(item, index) in aboutusList"
       :key="item.id"
       :class="index % 2 === 0 ? 'bg-grey-2' : 'bg-grey-4'"
@@ -31,27 +31,15 @@ export default {
     const aboutusList = computed(() => [
       {
         id: 1,
-        icon: "/webcam-security.svg",
+        icon: "/security-guard.svg",
         title: t(`AboutUs[0].title`),
         subTitle: t(`AboutUs[0].subTitle`),
       },
       {
         id: 2,
-        icon: "/security-guard.svg",
+        icon: "/motivated-guards.svg",
         title: t(`AboutUs[1].title`),
         subTitle: t(`AboutUs[1].subTitle`),
-      },
-      {
-        id: 3,
-        icon: "/motivated-guards.svg",
-        title: t(`AboutUs[2].title`),
-        subTitle: t(`AboutUs[2].subTitle`),
-      },
-      {
-        id: 4,
-        icon: "/allday-security.svg",
-        title: t(`AboutUs[3].title`),
-        subTitle: t(`AboutUs[3].subTitle`),
       },
     ]);
     return {
