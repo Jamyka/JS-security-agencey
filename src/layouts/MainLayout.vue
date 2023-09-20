@@ -120,7 +120,6 @@ export default defineComponent({
 
     onMounted(() => {
       observeSections();
-      console.log(navList);
     });
 
     const observeSections = () => {
@@ -175,10 +174,11 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .header-bg {
-  background-color: #ffffff3b;
+  // background-color: #ffffff3b;
+  background-color: #fff;
   transition: all 250ms ease;
-  &:hover {
-    background-color: #fff;
-  }
+  // &:hover {
+  //   background-color: #fff;
+  // }
 }
 </style>
