@@ -1,14 +1,15 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header class="header-bg">
+    <q-header reveal class="header-bg">
       <q-toolbar>
         <q-img
-          src="/logo.svg"
+          src="/logo.png"
           fit="contain"
-          width="120px"
-          height="120px"
+          width="70px"
+          height="70px"
           no-spinner
           loading="eager"
+          class="q-my-md q-mx-sm"
         />
         <q-space />
         <div class="q-pr-xl q-mr-xl" v-if="$q.screen.width > 768">
@@ -28,7 +29,7 @@
             />
           </q-tabs>
         </div>
-        <div v-if="$q.screen.width <= 768">
+        <div v-if="$q.screen.width <= 768" class="q-mx-md">
           <q-btn
             flat
             dense
@@ -41,7 +42,7 @@
         </div>
       </q-toolbar>
     </q-header>
-    <q-drawer v-model="leftDrawerOpen" bordered>
+    <q-drawer v-model="leftDrawerOpen" bordered class="no-scroll">
       <h6 class="text-negative text-center">
         <q-img
           src="/logo.svg"
@@ -63,12 +64,14 @@
           exact
           :label="item.label"
         />
-        <q-btn
-          :label="locale == 'fr' ? 'France' : 'English'"
-          color="negative"
-          rounded
-          @click="switchLang"
-        />
+        <div class="flex flex-center q-mt-md">
+          <q-btn
+            :label="locale == 'fr' ? 'English' : 'France'"
+            color="negative"
+            rounded
+            @click="switchLang"
+          />
+        </div>
       </q-tabs>
     </q-drawer>
 
@@ -98,19 +101,19 @@ export default defineComponent({
     const navList = computed(() => [
       {
         label: t("Navbar.home"),
-        to: "#mainCarousel",
+        to: "/#mainCarousel",
       },
       {
         label: t("Navbar.about"),
-        to: "#aboutUs",
+        to: "/#aboutUs",
       },
       {
         label: t("Navbar.services"),
-        to: "#servicesSection",
+        to: "/#servicesSection",
       },
       {
         label: t("Navbar.contactUs"),
-        to: "#contactUs",
+        to: "/#contactUs",
       },
     ]);
     let sectionObserver = null;
@@ -154,6 +157,8 @@ export default defineComponent({
     const switchLang = () => {
       if (locale.value == "en") locale.value = "fr";
       else locale.value = "en";
+
+      leftDrawerOpen.value = false;
     };
 
     return {

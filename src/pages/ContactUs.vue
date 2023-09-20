@@ -6,15 +6,23 @@
     data-aos-offset="200"
     data-aos-easing="ease-in-out"
   >
-    <div class="row flex justify-center q-mt-xl q-mb-lg q-ml-xl">
+    <div class="row flex justify-center q-mt-xl q-mb-lg">
       <section-title-component class="col-md-3 col-sm-12" title="Contact Us" />
     </div>
     <div class="row justify-center q-mt-xl">
-      <div class="col-3 text-center contact-us-item">
+      <div
+        class="col-lg-3 col-md-6 col-sm-12 q-my-lg text-center contact-us-item"
+      >
         1211,blvd de avoir #205 lava
       </div>
-      <div class="col-3 text-center contact-us-item">1-233-1333</div>
-      <div class="col-3 text-center contact-us-item">
+      <div
+        class="col-lg-3 col-md-6 col-sm-12 q-my-lg text-center contact-us-item"
+      >
+        1-233-1333
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-12 q-my-lg text-center contact-us-item"
+      >
         Service @securalpha.com
       </div>
     </div>

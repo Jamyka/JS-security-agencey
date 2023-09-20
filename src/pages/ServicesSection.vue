@@ -8,12 +8,12 @@
   >
     <div class="row flex justify-center q-mt-xl q-mb-lg">
       <section-title-component
-        class="col-md-3 col-sm-12"
+        class="col-md-6 col-sm-12"
         title="Our Services"
       />
     </div>
     <div class="row justify-center">
-      <div class="col-6 desc">
+      <div class="col-6 desc bg-amber">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum fuga
         qui, quo in magnam non doloremque, dicta at voluptatibus soluta maxime,
         rerum voluptatum. Dolorum facere dignissimos fugiat saepe commodi quae?

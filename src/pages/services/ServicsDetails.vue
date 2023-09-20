@@ -4,8 +4,17 @@
     <div class="content">
       <div class="title">{{ serviceItem.title }}</div>
       <div class="desc">{{ serviceItem.desc }}</div>
-      <ul v-if="serviceItem.prosList && serviceItem.prosList.length > 0">
-        <li v-for="(item, i) in serviceItem.prosList" :key="i">{{ item }}</li>
+      <ul
+        v-if="serviceItem.prosList && serviceItem.prosList.length > 0"
+        class="q-pl-lg-xl q-pl-md-lg q-pl-sm-xl"
+      >
+        <li
+          v-for="(item, i) in serviceItem.prosList"
+          :key="i"
+          class="q-my-md text-left"
+        >
+          {{ item }}
+        </li>
       </ul>
     </div>
   </div>
