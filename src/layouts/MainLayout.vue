@@ -51,16 +51,17 @@
     <q-drawer v-model="leftDrawerOpen" bordered class="no-scroll">
       <h6 class="text-negative text-center">
         <q-img
-          src="/logo.svg"
+          src="/logo.png"
           fit="contain"
           width="120px"
           height="120px"
           no-spinner
           loading="eager"
+          class="q-mb-xl"
         />
         <br />
         JS <br />
-        Agance de Securite
+        Agence de Sécurité
       </h6>
       <q-tabs no-caps vertical class="text-negative">
         <q-route-tab

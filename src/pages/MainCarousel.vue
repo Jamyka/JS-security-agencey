@@ -10,7 +10,7 @@
       transition-prev="slide-right"
       transition-next="slide-left"
       @mouseenter="autoplay = false"
-      @mouseleave="autoplay = true"
+      @mouseleave="autoplay = false"
       class="mainCarousel"
     >
       <q-carousel-slide
