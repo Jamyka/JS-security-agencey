@@ -18,7 +18,7 @@ export default {
     },
     {
       id: 2,
-      title: "Team of security guards",
+      title: "Our team of security guards",
       subTitle:
         "Work together to ensure the client's expectations are being met.",
       img: "/guard-5.jpg",
@@ -49,7 +49,7 @@ export default {
   ],
   ServiceSection: {
     desc: "Our security guards to perform specific tasks which may include:",
-    list: "Monitor, watch or protect persons - property or premises,Closed circuit TV monitoring,Crowd control,Parking control,Maintain order,Carry out monitoring work in order to prevent shoplifting,Patrol in a vehicle or on foot,Ensure safety procedures are followed,Doorman security,Detect and prevent theft - fire- and vandalism Enforce regulations of establishments,Discourage misbehavior",
+    list: "Monitor - watch or protect persons - property or premises,Closed circuit TV monitoring,Crowd control,Parking control,Maintain order,Carry out monitoring work in order to prevent shoplifting,Patrol in a vehicle or on foot,Ensure safety procedures are followed,Doorman security,Detect and prevent theft - fire- and vandalism Enforce regulations of establishments,Discourage misbehavior",
   },
   ServicesList: [
     {
@@ -81,13 +81,13 @@ export default {
       "Facility Security Management,Customer Service & Wayfinding,First Aid & Safety,Security Ambassadors,Compliance and Enforcement,Incident Management & Response,Access Control,Parking Enforcement,Operations Centres & Monitoring",
   },
   SecurityPatrol: {
-    title: "JS Security Patrol",
+    title: "Security Patrol",
     desc: "In a vehicle or on foot Around-the-Clock Security Patrols Protect You in Many Ways: ",
     prosList:
       "Promotes a safe workplace environment,Deters vandalism, theft and trespassers,Rapid response to emergency situations,Detect emergencies and fires,Quick notification to local law enforcement and fire and emergency services,Alert you to unsafe conditions such as water leaks or power outages",
   },
   SurveillanceCameras: {
-    title: "JS Surveillance Cameras",
+    title: "Surveillance Cameras",
     desc: "Installs surveillance cameras with specialists in installing CCTV for homes, companies, factories and hotels Keep your home and property safe by installing a connected camera.",
   },
 };

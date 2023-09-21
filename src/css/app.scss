@@ -43,18 +43,15 @@ html {
       background-color: #0000007c;
     }
     .custom-caption {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: center;
       width: 80%;
-      position: absolute;
       top: 50%;
       left: 50%;
-      text-align: center;
+      z-index: 9;
       padding: 12px;
       color: white;
-      z-index: 9;
+      position: absolute;
+      text-align: center;
+      font-size: 60px;
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       -moz-transform: translate(-50%, -50%);
@@ -244,7 +241,15 @@ html {
 
 @media (max-width: 426px) {
   .mainCarousel {
-    height: 180vh;
+    height: 100vh;
+    .q-carousel__slide {
+      .custom-caption {
+        font-size: 30px;
+        .text-subtitle {
+          font-size: 20px;
+        }
+      }
+    }
   }
   .servicesSection {
     .service {

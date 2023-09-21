@@ -18,9 +18,9 @@ export default {
     },
     {
       id: 2,
-      title: "Agents de sécurité",
+      title: "Notre équipe d'agents de sécurité",
       subTitle:
-        "Ensemble pour s'assurer que les attentes du client sont satisfaites.",
+        "Travaille ensemble pour garantir que les attentes du client sont satisfaites.",
       img: "/guard-5.jpg",
     },
     {
@@ -81,13 +81,13 @@ export default {
       "Gestion de la sécurité des installations,Service client et orientation,Premiers secours et sécurité,Ambassadeurs de la sécurité,Conformité et application,Gestion des incidents et réponse,Contrôle d'accès,Application du stationnement,Centres d'opérations et surveillance",
   },
   SecurityPatrol: {
-    title: "Patrouille de sécurité JS",
+    title: "Patrouille de sécurité",
     desc: "En véhicule automobile ou à pied Des patrouilles de sécurité 24 heures sur 24 vous protègent de plusieurs manières: ",
     prosList:
       "Favorise un environnement de travail sécuritaire,Dissuade le vandalisme, le vol et les intrus,Réponse rapide aux situations d'urgence,Détecter les urgences et les incendies,Notification rapide aux forces de l'ordre locales et aux services d'incendie et d'urgence,Vous alerter des conditions dangereuses, telles que les fuites d'eau ou les pannes de courant",
   },
   SurveillanceCameras: {
-    title: "J S Installe des caméras de surveillance",
+    title: "Installe des caméras de surveillance",
     desc: "avec des spécialistes de l'installation de vidéosurveillance pour les maisons, les entreprises, les usines et les hôtels Protégez votre maison et vos biens en installant une caméra connectée.",
   },
 };

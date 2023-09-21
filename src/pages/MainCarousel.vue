@@ -20,7 +20,7 @@
         :img-src="item.img"
       >
         <div class="absolute-center custom-caption">
-          <div class="text-h2 text-weight-bold text-negative">
+          <div class="text-weight-bold text-negative">
             {{ item.title }}
           </div>
           <div class="text-subtitle q-mt-md">{{ item.subTitle }}</div>
