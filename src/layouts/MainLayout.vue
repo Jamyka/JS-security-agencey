@@ -180,12 +180,8 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .header-bg {
-  // background-color: #ffffff3b;
-  background-color: #333333;
+  background-color: #000;
   transition: all 250ms ease;
-  // &:hover {
-  //   background-color: #fff;
-  // }
 }
 .logo-title {
   font-weight: bold;

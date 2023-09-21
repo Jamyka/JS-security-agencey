@@ -13,22 +13,22 @@
       />
     </div>
     <div class="row justify-center">
-      <div class="col-lg-8 col-md-8 col-sm-11 desc">
-        <div class="text-h4 text-weight-bold">
+      <div class="col-lg-10 col-md-10 col-sm-11 desc">
+        <div class="text-h4 text-weight-bold q-px-lg text-center">
           {{ serviceSection.desc }}
         </div>
         <ul>
           <li
             v-for="(item, i) in serviceSection.list"
             :key="i"
-            class="text-h5 q-mr-xl text-weight-bold"
+            class="text-h6 q-mr-xl text-weight-bold"
           >
             {{ item }}
           </li>
         </ul>
       </div>
     </div>
-    <div class="row justify-evenly q-my-xl">
+    <div class="row justify-evenly q-my-xl q-px-lg">
       <div
         v-for="(item, index) in sercviceItems"
         :key="index"
