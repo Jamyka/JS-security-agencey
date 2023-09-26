@@ -3,10 +3,10 @@
 
 export default {
   Navbar: {
-    home: "Main Fr",
-    about: "About Fr",
-    services: "Services Fr",
-    contactUs: "Contact Us Fr",
+    home: "Principal",
+    about: "À propos",
+    services: "Services",
+    contactUs: "Contactez-nous",
   },
   MainSlider: [
     {

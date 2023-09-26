@@ -44,7 +44,7 @@
             <div class="btn-wrapper">
               <q-btn
                 color="negative"
-                label="Read More"
+                :label="locale == 'en' ? 'Read More' : 'En savoir plus'"
                 size="md"
                 @click="$router.push(`/service/${item.id}`)"
               />
@@ -64,7 +64,7 @@ import { useI18n } from "vue-i18n";
 export default {
   components: { SectionTitleComponent, BlurryImgComponent },
   setup() {
-    const { t } = useI18n({ useScope: "global" });
+    const { locale, t } = useI18n({ useScope: "global" });
     const serviceSection = computed(() => {
       return {
         desc: t(`ServiceSection.desc`),
@@ -92,6 +92,7 @@ export default {
       },
     ]);
     return {
+      locale,
       serviceSection,
       sercviceItems,
     };

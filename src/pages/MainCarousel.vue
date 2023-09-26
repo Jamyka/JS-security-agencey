@@ -19,6 +19,9 @@
         :name="item.id"
         :img-src="item.img"
       >
+        <div class="absolute-top-right cust-js text-weight-bold text-negative">
+          JS
+        </div>
         <div class="absolute-center custom-caption">
           <div class="text-weight-bold text-negative">
             {{ item.title }}

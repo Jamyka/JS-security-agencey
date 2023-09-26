@@ -6,8 +6,8 @@
           <q-img
             src="/logo.png"
             fit="contain"
-            width="80px"
-            height="80px"
+            width="120px"
+            height="120px"
             no-spinner
             loading="eager"
             class="q-my-md q-mx-sm"
@@ -84,6 +84,16 @@
 
     <div>
       <router-view />
+    </div>
+    <div>
+      <div class="contact-us__btn">
+        <q-icon
+          name="phone"
+          color="white"
+          size="lg"
+          @click="$router.push('/#contactUs')"
+        />
+      </div>
     </div>
   </q-layout>
 </template>
@@ -186,8 +196,8 @@ export default defineComponent({
 }
 .logo-title {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 38px;
   color: #bc1e2c;
-  text-shadow: 3px 3px 6px rgba(233, 216, 0, 0.75);
+  text-shadow: 1px 1px 6px rgba(233, 218, 0, 0.61);
 }
 </style>
