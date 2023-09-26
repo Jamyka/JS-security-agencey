@@ -7,7 +7,10 @@
     data-aos-easing="ease-in-out"
   >
     <div class="row flex justify-center q-mt-xl q-mb-lg">
-      <section-title-component class="col-md-3 col-sm-12" title="Contact Us" />
+      <section-title-component
+        class="col-md-3 col-sm-12"
+        :title="locale == 'en' ? 'Contact Us' : 'Contactez Nous'"
+      />
     </div>
     <div class="row justify-center q-mt-xl">
       <div
@@ -30,8 +33,15 @@
 </template>
 <script>
 import SectionTitleComponent from "src/components/SectionTitleComponent.vue";
+import { useI18n } from "vue-i18n";
 
 export default {
   components: { SectionTitleComponent },
+  setup() {
+    const { locale, t } = useI18n({ useScope: "global" });
+    return {
+      locale,
+    };
+  },
 };
 </script>

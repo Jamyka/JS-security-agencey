@@ -9,7 +9,7 @@
     <div class="row flex justify-center q-mt-xl q-mb-lg">
       <section-title-component
         class="col-md-3 col-sm-12"
-        title="Our Services"
+        :title="locale == 'en' ? 'Our Services' : 'Nos Services'"
       />
     </div>
     <div class="row justify-center">
