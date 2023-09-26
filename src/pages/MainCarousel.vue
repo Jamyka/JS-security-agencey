@@ -20,7 +20,15 @@
         :img-src="item.img"
       >
         <div class="absolute-top-right cust-js text-weight-bold text-negative">
-          JS
+          <q-img
+            src="/logo.png"
+            fit="contain"
+            width="120px"
+            height="120px"
+            no-spinner
+            loading="eager"
+            class="q-my-md q-mx-sm"
+          />
         </div>
         <div class="absolute-center custom-caption">
           <div class="text-weight-bold text-negative">

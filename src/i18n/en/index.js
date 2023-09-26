@@ -13,7 +13,7 @@ export default {
       id: 1,
       title: "JS Agence de Sécurité",
       subTitle:
-        "Our website provides our existing and prospective clients a simple yet interactive view of our work and the services we offer.",
+        "Our website provides our clients a simple yet interactive view of our work and the services we offer.",
       img: "/montreal.webp",
     },
     {
@@ -25,9 +25,8 @@ export default {
     },
     {
       id: 3,
-      title: "Our security guards are carefully screened and selected",
-      subTitle:
-        "Our Field Supervisors work with our security personnel on a continuing basis to ensure the same high level of service is consistently delivered.",
+      title: "",
+      subTitle: "",
       img: "/screens.jpg",
     },
   ],
@@ -36,15 +35,14 @@ export default {
       id: 1,
       icon: "/security-guard.svg",
       title: "Security Guard",
-      subTitle:
-        "Our team of security guards, dispatchers, supervisors and patrollers work together to ensure the client's expectations are being met.",
+      subTitle: "Our security guards are carefully screened and selected",
     },
     {
       id: 2,
       icon: "/motivated-guards.svg",
       title: "Motivated Guards",
       subTitle:
-        "Our security guards are carefully screened and selected, and evaluated on an ongoing basis. Our Field Supervisors work with our security personnel on a continuing basis to ensure the same high level of service is consistently delivered.",
+        "Our Field Supervisors work with our security personnel on a continuing basis to ensure the same high level of service is consistently delivered.",
     },
   ],
   ServiceSection: {

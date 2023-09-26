@@ -13,7 +13,7 @@ export default {
       id: 1,
       title: "JS Agence de Sécurité",
       subTitle:
-        "Notre site Web offre à nos clients existants et potentiels une vue simple mais interactive de notre travail et des services que nous proposons.",
+        "Notre site Web offre à nos clients une vue simple mais interactive de notre travail et des services que nous proposons.",
       img: "/montreal.webp",
     },
     {
@@ -25,9 +25,8 @@ export default {
     },
     {
       id: 3,
-      title: "Nos agents de sécurité sont soigneusement sélectionnés",
-      subTitle:
-        "Nos superviseurs de terrain travaillent en permanence avec notre personnel de sécurité pour garantir que le même niveau de service élevé est constamment fourni.",
+      title: "",
+      subTitle: "",
       img: "/screens.jpg",
     },
   ],
@@ -36,15 +35,14 @@ export default {
       id: 1,
       icon: "/security-guard.svg",
       title: "Agents De Sécurité",
-      subTitle:
-        "Notre équipe d'agents de sécurité, de répartiteurs, de superviseurs et de patrouilleurs travaillent ensemble pour s'assurer que les attentes du client sont satisfaites.",
+      subTitle: "Nos agents de sécurité sont soigneusement sélectionnés",
     },
     {
       id: 2,
       icon: "/motivated-guards.svg",
       title: "Des Gardes Motivés",
       subTitle:
-        "Nos agents de sécurité sont soigneusement sélectionnés et évalués sur une base continue. Nos superviseurs de terrain travaillent en permanence avec notre personnel de sécurité pour garantir que le même niveau de service élevé est constamment fourni.",
+        "Nos superviseurs de terrain travaillent en permanence avec notre personnel de sécurité pour garantir que le même niveau de service élevé est constamment fourni.",
     },
   ],
   ServiceSection: {
