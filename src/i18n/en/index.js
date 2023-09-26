@@ -20,7 +20,7 @@ export default {
       id: 2,
       title: "Our team of security guards",
       subTitle:
-        "Work together to ensure the client's expectations are being met.",
+        "Work together to ensure the client's expectations are being satisfied.",
       img: "/guard-5.jpg",
     },
     {
