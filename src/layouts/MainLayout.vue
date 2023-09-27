@@ -6,8 +6,8 @@
           <q-img
             src="/logo.png"
             fit="contain"
-            width="120px"
-            height="120px"
+            width="90px"
+            height="90px"
             no-spinner
             loading="eager"
             class="q-my-md q-mx-sm"
