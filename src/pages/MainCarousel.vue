@@ -23,11 +23,12 @@
           <q-img
             src="/logo.png"
             fit="contain"
-            width="90px"
-            height="90px"
+            width="120px"
+            height="120px"
             no-spinner
             loading="eager"
             class="q-my-md q-mx-sm"
+            v-if="item.id === 3"
           />
         </div>
         <div class="absolute-center custom-caption">
