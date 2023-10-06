@@ -16,7 +16,7 @@
       <div
         class="col-lg-3 col-md-6 col-sm-12 q-my-lg text-center contact-us-item"
       >
-        1211,blvd de avoir #205 lava
+        4795,Boul.St Charles, Suite 104, Pierrefonds, QC, H9H 3C7
       </div>
       <div
         class="col-lg-3 col-md-6 col-sm-12 q-my-lg text-center contact-us-item"
