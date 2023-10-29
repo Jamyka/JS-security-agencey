@@ -21,7 +21,9 @@
       <div
         class="col-lg-3 col-md-6 col-sm-12 q-my-lg text-center contact-us-item"
       >
-        1-233-1333
+        <span>(514) 519-5844</span> <br />
+        <span>(438) 875-0015</span> <br />
+        <span>(514) 977-2515</span>
       </div>
       <div
         class="col-lg-3 col-md-6 col-sm-12 q-my-lg text-center contact-us-item"
